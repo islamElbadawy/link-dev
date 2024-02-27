@@ -9,6 +9,7 @@
     .menu {
       @apply absolute left-0 top-[85px] w-full p-8 ps-16 flex-col gap-16 hidden;
       transition: all 0.4s ease-in-out;
+      z-index: 10;
 
       &.show {
         @apply flex;

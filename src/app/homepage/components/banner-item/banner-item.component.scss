@@ -1,0 +1,42 @@
+.banner-item {
+  @apply relative h-full flex flex-col justify-end items-start;
+  .container {
+    @apply h-fit flex flex-col justify-center items-start gap-8 mb-0;
+    height: calc(100% - 100px);
+
+    .banner-img {
+      @apply hidden;
+
+      @media screen and (min-width: 1200px) {
+        @apply block absolute bottom-0 right-0;
+      }
+    }
+
+    span {
+      @apply text-lg font-bold;
+    }
+
+    h1 {
+      @apply text-[48px] font-bold text-[#181E4B]  max-w-[500px];
+    }
+
+    p {
+      @apply text-lg text-[#5E6282] tracking-wide  max-w-[600px];
+    }
+
+    .banner-btns {
+      @apply flex gap-4 items-center mt-8;
+
+      a {
+        @apply text-sm;
+        &:first-of-type {
+          @apply text-white text-sm py-4 px-8 bg-[#FF7C16] rounded;
+        }
+
+        &:last-of-type {
+          @apply flex items-center gap-4 text-[#5E6282] font-extralight;
+        }
+      }
+    }
+  }
+}
