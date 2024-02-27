@@ -1,0 +1,57 @@
+.navbar {
+  @apply w-full px-4 py-4  absolute top-0 left-0;
+
+  .container {
+    @apply mx-auto flex justify-between gap-12 items-center;
+    .brand {
+      @apply w-20;
+    }
+    .menu {
+      @apply absolute left-0 top-[85px] w-full p-8 ps-16 flex-col gap-16 hidden;
+      transition: all 0.4s ease-in-out;
+
+      &.show {
+        @apply flex;
+      }
+
+      .menu-nav {
+        @apply flex flex-col gap-8;
+        li {
+          a {
+            @apply text-sm text-[#5e6282];
+          }
+        }
+      }
+
+      .nav-buttons {
+        @apply flex gap-8 items-center text-sm text-[#5e6282];
+
+        .signup {
+          @apply border border-[#5e6282] rounded px-4 py-2;
+        }
+      }
+    }
+
+    .menu-toggler {
+      @apply w-fit;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navbar {
+    .container {
+      .menu {
+        @apply flex flex-row flex-1 static justify-around  items-center;
+
+        .menu-nav {
+          @apply flex-row;
+        }
+      }
+
+      .menu-toggler {
+        @apply hidden;
+      }
+    }
+  }
+}
