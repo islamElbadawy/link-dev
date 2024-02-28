@@ -4,7 +4,7 @@
   .container {
     @apply mx-auto flex justify-between gap-12 items-center;
     .brand {
-      @apply w-20;
+      @apply w-24;
     }
     .menu {
       @apply absolute left-0 top-[85px] w-full p-8 ps-16 flex-col gap-16 hidden bg-white border-b-[1px] shadow-md;
