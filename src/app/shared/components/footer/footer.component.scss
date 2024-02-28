@@ -1,0 +1,50 @@
+footer {
+  @apply bg-gradient-to-br from-transparent from-75% to-[#D5AEE4] pt-10 pb-4;
+
+  .container {
+    &:first-of-type {
+      @apply flex flex-wrap justify-between;
+
+      div {
+        .logo {
+          @apply w-[157px] mb-2;
+        }
+        p {
+          @apply max-w-[225px] text-[#5E6282] text-sm;
+        }
+
+        h4 {
+          @apply text-lg text-[#080809] font-bold mb-8;
+        }
+
+        ul {
+          @apply flex flex-col gap-3;
+
+          li {
+            @apply text-[#5E6282] text-sm;
+          }
+        }
+
+        .social {
+          @apply flex gap-6 mb-6;
+
+          a {
+            @apply p-4 bg-white rounded-full drop-shadow-lg;
+          }
+        }
+
+        .apps {
+          h5 {
+            @apply text-[#5E6282] text-lg;
+          }
+
+          div {
+            a {
+              @apply rounded-lg;
+            }
+          }
+        }
+      }
+    }
+  }
+}
