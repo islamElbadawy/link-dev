@@ -33,8 +33,16 @@ export class LatestNewsComponent {
         })
       )
       .subscribe((items: NewsItem[]) => {
-        this.news = items;
-        console.log(this.news);
+        this.news = items.sort((a, b) => {
+          const dateA = new Date(a.publishedDate);
+          const dateB = new Date(b.publishedDate);
+
+          if (isNaN(dateA.getTime()) || isNaN(dateB.getTime())) {
+            return 0;
+          }
+
+          return dateA.getTime() - dateB.getTime();
+        });
       });
 
     this.apiService
