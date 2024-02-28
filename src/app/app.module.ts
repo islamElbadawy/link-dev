@@ -7,6 +7,7 @@ import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { NgxBootstrapIconsModule, allIcons } from 'ngx-bootstrap-icons';
 import { HttpClientModule } from '@angular/common/http';
+import { DATE_PIPE_DEFAULT_OPTIONS, DatePipe } from '@angular/common';
 
 @NgModule({
   declarations: [AppComponent, NavbarComponent, FooterComponent],
@@ -15,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     NgxBootstrapIconsModule.pick(allIcons),
     HttpClientModule,
+    DatePipe,
   ],
   providers: [],
   bootstrap: [AppComponent],

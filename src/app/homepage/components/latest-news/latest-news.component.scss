@@ -1,6 +1,6 @@
 section {
   .container {
-    @apply text-center;
+    @apply text-center overflow-hidden;
 
     .heading {
       @apply flex flex-col items-center gap-2;
@@ -12,6 +12,10 @@ section {
       h2 {
         @apply text-4xl text-[#14183E] font-bold mb-8;
       }
+    }
+
+    .list {
+      @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-8;
     }
   }
 }

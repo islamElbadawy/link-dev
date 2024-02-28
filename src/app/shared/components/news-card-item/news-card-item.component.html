@@ -1,1 +1,10 @@
-<p>news-card-item works!</p>
+<div class="card">
+    <img [src]="item.urlToImage" [alt]="item.title" loading="lazy">
+    <p class="line-clamp-3">{{ item.description }} </p>
+    <span>{{item.publishedDate | date }} </span>
+    <div class="footer">
+        <span>{{item.categoryID}} </span>
+
+
+    </div>
+</div>

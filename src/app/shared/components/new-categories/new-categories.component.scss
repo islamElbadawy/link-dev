@@ -1,8 +1,8 @@
 div {
-  @apply flex flex-row gap-8 items-center justify-center;
+  @apply flex flex-row gap-8 items-center justify-start w-full overflow-x-scroll lg:justify-center lg:overflow-x-hidden px-4;
 
   button {
-    @apply text-white text-xs py-2  bg-slate-500 rounded-xl w-28 transition-all;
+    @apply text-white text-xs py-2  bg-slate-500 rounded-xl w-28 min-w-28 transition-all;
 
     &.active {
       @apply bg-blue-500;
