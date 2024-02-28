@@ -3,18 +3,21 @@ import { NewCategoriesComponent } from '../../../shared/components/new-categorie
 import { NewsCardItemComponent } from '../../../shared/components/news-card-item/news-card-item.component';
 import { ApiService } from '../../../shared/services/api.service';
 import { NewsItem } from '../../../shared/models/news-item';
-import { Observable, filter, map } from 'rxjs';
+import { map } from 'rxjs';
+import { FilterPipe } from '../../../shared/pipes/filter.pipe';
+import { CategoryItem } from '../../../shared/models/category-item';
 
 @Component({
   selector: 'app-latest-news',
   standalone: true,
-  imports: [NewCategoriesComponent, NewsCardItemComponent],
+  imports: [NewCategoriesComponent, NewsCardItemComponent, FilterPipe],
   templateUrl: './latest-news.component.html',
   styleUrl: './latest-news.component.scss',
 })
 export class LatestNewsComponent {
   selecetedCategory!: number;
   news!: NewsItem[];
+  categories!: CategoryItem[];
 
   constructor(private apiService: ApiService) {}
 
@@ -29,7 +32,14 @@ export class LatestNewsComponent {
           return news;
         })
       )
-      .subscribe((items: NewsItem[]) => (this.news = items));
+      .subscribe((items: NewsItem[]) => {
+        this.news = items;
+        console.log(this.news);
+      });
+
+    this.apiService
+      .getCategories()
+      .subscribe((res: any) => (this.categories = res.newsCategory));
   }
 
   setSelectedCat(id: number) {

@@ -1,10 +1,34 @@
 <div class="card">
-    <img [src]="item.urlToImage" [alt]="item.title" loading="lazy">
-    <p class="line-clamp-3">{{ item.description }} </p>
-    <span>{{item.publishedDate | date }} </span>
+    <a [routerLink]="'/news/' + item.id">
+        <img [src]="item.urlToImage" [alt]="item.title">
+    </a>
+    <p class="line-clamp-3">{{ item.content }} </p>
+    <span class="date">
+        <!-- <fa-icon [icon]="['fas', 'twitter']"></fa-icon> -->
+        <i-bs class="text-[#13BEFF]" name="calendar4" width="18" height="20">
+        </i-bs>
+        <span>{{item.publishedDate | date }} </span>
+    </span>
     <div class="footer">
-        <span>{{item.categoryID}} </span>
+        <span class="cat">{{ categories | parseCategory : +item.categoryID}} </span>
 
-
+        <div class="actions">
+            @if (isFav) {
+            <button (click)="setFav(false)">
+                <i-bs name="star-fill" width="18" height="20">
+                </i-bs>
+            </button>
+            }
+            @else {
+            <button (click)="setFav(true)">
+                <i-bs name="star" width="18" height="20">
+                </i-bs>
+            </button>
+            }
+            <button>
+                <i-bs name="share-fill" width="18" height="20">
+                </i-bs>
+            </button>
+        </div>
     </div>
 </div>

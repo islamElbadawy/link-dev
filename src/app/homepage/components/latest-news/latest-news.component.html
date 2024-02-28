@@ -5,11 +5,16 @@
             <h2>Top News</h2>
         </div>
         <app-new-categories (selectCategory)="setSelectedCat($event)"></app-new-categories>
+        @if (news) {
         <div class="list">
-            @for (item of news ; track $index ) {
-            <app-news-card-item [item]="item"></app-news-card-item>
+            @for (item of news | filter : selecetedCategory ; track $index ) {
+            <app-news-card-item [item]="item" [categories]="categories"></app-news-card-item>
             }
         </div>
+        }
+        @else{
+        <p>No news found</p>
+        }
         <button>View all news</button>
     </div>
 </section>

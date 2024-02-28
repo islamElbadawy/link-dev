@@ -1,0 +1,27 @@
+.card {
+  @apply w-full max-w-[360px] flex flex-col gap-4 rounded-xl bg-white drop-shadow-xl overflow-hidden pb-8;
+
+  img {
+    @apply w-full object-cover aspect-[1/1];
+  }
+
+  p {
+    @apply px-4 text-base text-start font-bold text-[#5E6282];
+  }
+
+  .date {
+    @apply ps-4 text-sm text-[#5E6282] flex gap-2 items-center;
+  }
+
+  .footer {
+    @apply flex justify-between px-4;
+
+    .cat {
+      @apply text-sm text-[#5E6282];
+    }
+
+    .actions {
+      @apply flex gap-3 text-[#13BEFF];
+    }
+  }
+}
