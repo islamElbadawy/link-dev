@@ -17,6 +17,7 @@ export class NewsCardItemComponent {
   @Input()
   item!: NewsItem;
   isFav: boolean = false;
+  isSocial: boolean = false;
 
   @Input()
   categories!: CategoryItem[];
@@ -25,5 +26,9 @@ export class NewsCardItemComponent {
 
   setFav(isFav: boolean) {
     this.isFav = isFav;
+  }
+
+  toggleSocial() {
+    this.isSocial = !this.isSocial;
   }
 }
