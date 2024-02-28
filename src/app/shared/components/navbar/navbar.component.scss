@@ -1,5 +1,5 @@
 .navbar {
-  @apply w-full px-4 py-4  absolute top-0 left-0;
+  @apply w-full px-4 py-4  absolute top-0 left-0 z-10;
 
   .container {
     @apply mx-auto flex justify-between gap-12 items-center;
@@ -7,7 +7,7 @@
       @apply w-20;
     }
     .menu {
-      @apply absolute left-0 top-[85px] w-full p-8 ps-16 flex-col gap-16 hidden;
+      @apply absolute left-0 top-[85px] w-full p-8 ps-16 flex-col gap-16 hidden bg-white border-b-[1px] shadow-md;
       transition: all 0.4s ease-in-out;
       z-index: 10;
 
@@ -43,7 +43,7 @@
   .navbar {
     .container {
       .menu {
-        @apply flex flex-row flex-1 static justify-around  items-center;
+        @apply flex flex-row flex-1 static justify-around  items-center bg-transparent border-none shadow-none;
 
         .menu-nav {
           @apply flex-row;

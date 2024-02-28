@@ -1,10 +1,10 @@
 <nav class="navbar">
     <div class="container">
         <a routerLink="/" class="brand">
-            <img src="../../../../assets/images/Logo.png" alt="logo">
+            <img src="../../../../assets/images/Logo.png" alt="logo" />
         </a>
 
-        <div [class.show]="showMenu" class="menu">
+        <div [class.show]="showMenu" class="menu shadow">
             <ul class="menu-nav">
                 <li><a routerLink="/">Home</a></li>
                 <li><a routerLink="/">About us</a></li>
@@ -12,7 +12,7 @@
                 <li><a routerLink="/">contact us</a></li>
             </ul>
 
-            <div class="nav-buttons ">
+            <div class="nav-buttons">
                 <a routerLink="/" class="login">Login</a>
                 <a routerLink="/" class="signup">Sign up</a>
 
@@ -24,9 +24,7 @@
         </div>
 
         <button class="menu-toggler" (click)="toggleNavMenu()">
-            <i-bs name="list" width="56" height="56">
-            </i-bs>
+            <i-bs name="list" width="56" height="56"> </i-bs>
         </button>
     </div>
-
 </nav>
