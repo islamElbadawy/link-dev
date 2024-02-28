@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { NgxBootstrapIconsModule, allIcons } from 'ngx-bootstrap-icons';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent, NavbarComponent, FooterComponent],
@@ -13,6 +14,7 @@ import { NgxBootstrapIconsModule, allIcons } from 'ngx-bootstrap-icons';
     BrowserModule,
     AppRoutingModule,
     NgxBootstrapIconsModule.pick(allIcons),
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

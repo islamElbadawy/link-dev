@@ -34,7 +34,7 @@
       a {
         @apply text-sm;
         &:first-of-type {
-          @apply text-white text-sm py-4 px-8 bg-[#FF7C16] rounded;
+          @apply text-white text-sm py-4 px-8 bg-[#FF7C16] rounded-xl;
         }
 
         &:last-of-type {

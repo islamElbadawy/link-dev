@@ -1,0 +1,11 @@
+div {
+  @apply flex flex-row gap-8 items-center justify-center;
+
+  button {
+    @apply text-white text-xs py-2  bg-slate-500 rounded-xl w-28 transition-all;
+
+    &.active {
+      @apply bg-blue-500;
+    }
+  }
+}

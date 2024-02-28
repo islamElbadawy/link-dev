@@ -1,0 +1,17 @@
+section {
+  .container {
+    @apply text-center;
+
+    .heading {
+      @apply flex flex-col items-center gap-2;
+
+      span {
+        @apply text-sm text-[#5E6282] font-bold;
+      }
+
+      h2 {
+        @apply text-4xl text-[#14183E] font-bold mb-8;
+      }
+    }
+  }
+}

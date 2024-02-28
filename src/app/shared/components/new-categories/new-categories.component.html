@@ -1,1 +1,6 @@
-<p>new-categories works!</p>
+<div>
+    <button [class.active]="selectedCat == 0" (click)="selectCat(0)">All News</button>
+    @for (cat of categories; track $index) {
+    <button [class.active]="selectedCat == cat.id" (click)="selectCat(cat.id)">{{ cat.name }}</button>
+    }
+</div>
