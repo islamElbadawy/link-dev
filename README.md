@@ -61,6 +61,7 @@ project-root/
 ## Notes
 
 - Banner bruch line behind the main title of banner I used one as svg and it made the page load slowly so I removed it but is it's availabe I can replace it.
+- I made some components to be used in other modules keeping in mind project scalability such as News-card-item, and news-categories components.
 - The performance is heavily affected by slick carouseljs but I don't know what is the best option for now
   and it took much time to find a good one so I used it for now.
 - All animations required are done and the ones are not I made only some of them but of course I can handle them.
