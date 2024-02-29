@@ -26,7 +26,11 @@
     }
 
     h1 {
-      @apply text-[48px] font-bold text-[#181E4B]  max-w-[500px];
+      @apply relative text-[48px] font-bold text-[#181E4B]  max-w-[500px];
+
+      svg {
+        @apply block absolute right-[-2rem] top-0 z-[-1];
+      }
     }
 
     p {
