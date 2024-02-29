@@ -8,9 +8,7 @@
 $font-family-base: "Poppins", sans-serif;
 
 // Box-sizing reset
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
 }
 
@@ -23,13 +21,7 @@ h4,
 h5,
 h6,
 p,
-ul,
-ol,
-dl,
-figure,
-blockquote,
-fieldset,
-legend {
+ul {
   margin: 0;
   padding: 0;
   font-family: $font-family-base;
@@ -47,10 +39,7 @@ a {
 }
 
 // Remove default styling for form elements
-button,
-input,
-select,
-textarea {
+button {
   margin: 0;
 }
 
