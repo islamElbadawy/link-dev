@@ -9,7 +9,7 @@ section {
   }
 
   .services {
-    @apply relative xl:right-[-250px] z-20 flex flex-wrap justify-center order-2 xl:order-[0] xl:grid xl:grid-rows-3 xl:grid-flow-col gap-0 xl:mt-[-2rem];
+    @apply relative xl:right-[-175px] xl:w-[600px] z-20 flex flex-wrap justify-center order-2 xl:order-[0] xl:grid xl:grid-rows-3 xl:grid-flow-col gap-0 xl:mt-[-2rem];
 
     div {
       @apply relative w-[250px] h-[250px] overflow-hidden text-white flex flex-col justify-end;
@@ -37,7 +37,7 @@ section {
   }
 
   .about {
-    @apply xl:w-fit py-14 px-16 xl:ps-64 flex flex-col xl:items-end gap-14 xl:text-end bg-[#F215B6] z-10;
+    @apply py-14 px-16 xl:ps-64 flex flex-col flex-1 xl:items-end gap-14 xl:text-end bg-[#F215B6] z-10;
 
     h2 {
       @apply text-[48px] font-bold text-[#253776] xl:text-end  xl:max-w-[560px];
