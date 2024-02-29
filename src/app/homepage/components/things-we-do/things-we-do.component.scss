@@ -37,7 +37,7 @@ section {
   }
 
   .about {
-    @apply xl:w-fit py-14 pe-16 ps-64 flex flex-col xl:items-end gap-14 xl:text-end bg-[#F215B6] z-10;
+    @apply xl:w-fit py-14 px-16 xl:ps-64 flex flex-col xl:items-end gap-14 xl:text-end bg-[#F215B6] z-10;
 
     h2 {
       @apply text-[48px] font-bold text-[#253776] xl:text-end  xl:max-w-[560px];
