@@ -47,8 +47,6 @@ export class BannerComponent {
   }
 
   setActiveSlide(index: number) {
-    console.log(index);
-
     this.selectedSlide = index;
   }
 }
