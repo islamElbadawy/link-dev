@@ -28,7 +28,7 @@ export class BannerComponent {
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: false,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
     arrows: false,
   };
