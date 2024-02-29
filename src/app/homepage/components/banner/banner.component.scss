@@ -2,7 +2,7 @@
   @apply w-full relative  overflow-hidden;
 
   .carousel-dots {
-    @apply container flex gap-4 justify-center lg:justify-start lg:ps-[5rem] absolute bottom-[2rem]  items-center;
+    @apply container flex gap-2 justify-center lg:justify-start lg:ps-[5rem] absolute bottom-[2rem]  items-center;
 
     li {
       &.active {
