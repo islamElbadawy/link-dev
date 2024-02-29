@@ -19,13 +19,13 @@
         @apply flex flex-col gap-8;
         li {
           a {
-            @apply text-sm text-[#5e6282];
+            @apply text-base text-[#5e6282];
           }
         }
       }
 
       .nav-buttons {
-        @apply flex gap-8 items-center text-sm text-[#5e6282];
+        @apply flex gap-8 items-center text-base text-[#5e6282];
 
         .signup {
           @apply border border-[#5e6282] rounded px-4 py-2;
