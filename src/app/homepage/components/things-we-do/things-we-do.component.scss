@@ -26,9 +26,9 @@ section {
         @apply w-full h-full flex flex-col items-start ps-6 pb-8 transition-all duration-500 cursor-pointer;
 
         h3 {
-          @apply text-2xl text-white font-[800] mb-6;
+          @apply text-2xl text-white font-[800] mb-5;
 
-          text-shadow: 0rem 1.5rem white;
+          text-shadow: 0rem 1.25rem white;
           color: transparent;
           -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.3);
         }
@@ -44,7 +44,7 @@ section {
 
           h3 {
             @apply text-2xl text-white font-bold;
-            text-shadow: 0rem 1.5rem white;
+            text-shadow: 0rem 1.25rem white;
             color: transparent;
             -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.3);
           }
