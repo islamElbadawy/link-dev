@@ -7,11 +7,12 @@ import {
   SlickCarouselComponent,
   SlickCarouselModule,
 } from 'ngx-slick-carousel';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-banner',
   standalone: true,
-  imports: [BannerItemComponent, SlickCarouselModule],
+  imports: [BannerItemComponent, SlickCarouselModule, NgIf],
   templateUrl: './banner.component.html',
   styleUrl: './banner.component.scss',
 })

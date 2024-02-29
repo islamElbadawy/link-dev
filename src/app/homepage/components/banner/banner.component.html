@@ -6,10 +6,11 @@
         }
     </ngx-slick-carousel>
     <ul class="carousel-dots">
-        @for (item of items; track $index) {
+        @for (item of items; track $index;) {
         <li [class.active]="selectedSlide == $index">
             <button (click)="goToSlide($index)" [style.background]="'#' + item.colorCode"></button>
         </li>
+        <img *ngIf="!$last" src="../../../../assets/images/dotted-bg.png" alt="">
         }
     </ul>
 

@@ -2,17 +2,21 @@
   @apply w-full relative  overflow-hidden;
 
   .carousel-dots {
-    @apply container flex gap-24 absolute bottom-[2rem] left-[2rem] items-center;
+    @apply container flex gap-4 justify-center lg:justify-start lg:ps-[5rem] absolute bottom-[2rem]  items-center;
 
     li {
       &.active {
         button {
-          @apply scale-150 transition-all duration-300;
+          @apply scale-150 transition-all duration-300 mx-0;
         }
       }
       button {
         @apply w-8 h-8 rounded-full;
       }
+    }
+
+    img {
+      @apply w-40 opacity-70;
     }
   }
 }
