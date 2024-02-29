@@ -1,27 +1,72 @@
 # LinkDev
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.9.
+Homepage and News for the internet users to be able to view and list of News
+with filtering by category.
 
-## Development server
+## Table of Contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Project Structure](#project-structure)
+- [Dependencies](#dependencies)
+- [Changes in Assets](#changes-in-assets)
+- [Notes](#notes)
 
-## Code scaffolding
+## Project Structure
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+project-root/
+│
+├── src/
+│ ├── app/
+│ │ ├── homepage/
+│ │ │ ├── components/
+│ │ │ │ |── banner/
+│ │ │ │ |── banner-item/
+│ │ │ │ |── home/
+│ │ │ │ |── latest-news/
+│ │ │ │ |── things-we-do/
+│ │ ├── shared/
+│ │ │ ├── components/
+│ │ │ │ |── footer/
+│ │ │ │ |── navbar/
+│ │ │ │ |── news-categories/
+│ │ │ │ |── news-card-item/
+│ │ │ ├── models/
+│ │ │ │ |── about-dto.ts/
+│ │ │ │ |── banner-item.ts/
+│ │ │ │ |── category-item.ts/
+│ │ │ │ |── news-item.ts/
+│ │ │ │ |── service-item.ts/
+│ │ │ ├── pipes/
+│ │ │ │ |── filter.pipe.ts/
+│ │ │ │ |── parse-category.pipe.ts/
+│ │ │ ├── services/
+│ │ │ │ |── api.service.ts/
+│ ├── assets/
 
-## Build
+## Dependencies
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Angular 17
+- Sass
+- Tailwind
+- ngx-slick-carousel: "^1.9.3"
+- ngx-slick-carousel: "^17.0.0",
 
-## Running unit tests
+## Changes in Assets
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- All banner images are not available in design so I downloaded them from google and your official website.
+- Navbar sizes and dimensions are not clear as the UI developer used an image to show it.
+- Most of buttons and icons are images so I tried to get the closest design as possible.
+- The mobile view is not available so I built it depending on my previous experience.
+- Most of the assets used need to be optimized so I tried to do this as possible.
 
-## Running end-to-end tests
+## Notes
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Banner bruch line behind the main title of banner I used one as svg and it made the page load slowly so I removed it but is it's availabe I can replace it.
+- The performance is heavily affected by slick carouseljs but I don't know what is the best option for now
+  and it took much time to find a good one so I used it for now.
+- All animations required are done and the ones are not I made only some of them but of course I can handle them.
 
-## Further help
+## Summary
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- It was a challenging task as it came after long time no code practice in real work tried to do better but it's good as a start over, I'm waiting to know your feedback regardless I'm approaved or not.
+
+Thanks and Regards
