@@ -8,6 +8,7 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 import { NgxBootstrapIconsModule, allIcons } from 'ngx-bootstrap-icons';
 import { HttpClientModule } from '@angular/common/http';
 import { DatePipe } from '@angular/common';
+import { NgxSlickJsModule } from 'ngx-slickjs';
 
 @NgModule({
   declarations: [AppComponent, NavbarComponent, FooterComponent],

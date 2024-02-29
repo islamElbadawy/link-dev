@@ -12,8 +12,10 @@
                 <span>Play Demo</span></a>
         </div>
 
-        <img src="../../../../assets/images/slide-3-removebg-preview.png" [alt]="item?.title" loading="lazy"
+        @if (item) {
+        <img [src]="'../../../../assets/images/slide-' + (+item.id + 1) + '.png'" [alt]="item.title" loading="lazy"
             class="banner-img" />
+        }
 
 
         <svg class="banner-blob" xmlns="http://www.w3.org/2000/svg" width="822.575" height="912.383"

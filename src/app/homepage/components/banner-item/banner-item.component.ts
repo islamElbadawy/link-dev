@@ -11,5 +11,9 @@ import { BannerItem } from '../../../shared/models/banner-item';
 export class BannerItemComponent {
   @Input('item') item: BannerItem | undefined;
 
-  ngOnInit() {}
+  ngOnInit() {
+    if (this.item) {
+      this.item.imgUrl = String(this.item.id + 1);
+    }
+  }
 }

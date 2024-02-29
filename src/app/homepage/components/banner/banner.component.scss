@@ -1,3 +1,18 @@
 .banner {
-  @apply w-full;
+  @apply w-full relative;
+
+  .carousel-dots {
+    @apply container flex gap-24 absolute bottom-[2rem] left-[2rem] items-center;
+
+    li {
+      &.active {
+        button {
+          @apply scale-150 transition-all duration-300;
+        }
+      }
+      button {
+        @apply w-8 h-8 rounded-full;
+      }
+    }
+  }
 }

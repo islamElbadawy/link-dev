@@ -1,7 +1,7 @@
 .banner-item {
-  @apply h-full flex flex-col justify-end items-start overflow-hidden;
+  @apply h-full flex flex-col justify-end items-start overflow-hidden min-h-[630px];
   .container {
-    @apply relative h-fit flex flex-col justify-center items-start gap-8 mb-0 mt-40;
+    @apply relative h-fit flex flex-col justify-center items-start gap-8 mb-0 mt-36 pb-10;
     // height: calc(100% - 100px);
 
     .banner-img {

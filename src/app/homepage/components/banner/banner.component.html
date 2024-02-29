@@ -1,3 +1,16 @@
 <section class="banner">
-    <app-banner-item [item]="items[2]"></app-banner-item>
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slickConfig"
+        (afterChange)="setActiveSlide($event.currentSlide )">
+        @for (item of items; track $index) {
+        <app-banner-item ngxSlickItem [item]="item"></app-banner-item>
+        }
+    </ngx-slick-carousel>
+    <ul class="carousel-dots">
+        @for (item of items; track $index) {
+        <li [class.active]="selectedSlide == $index">
+            <button (click)="goToSlide($index)" [style.background]="'#' + item.colorCode"></button>
+        </li>
+        }
+    </ul>
+
 </section>
