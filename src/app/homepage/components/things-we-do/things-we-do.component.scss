@@ -23,14 +23,28 @@ section {
       }
 
       .text {
-        @apply w-full h-full flex flex-col items-start p-3;
+        @apply w-full h-full flex flex-col items-start ps-6 pb-8 transition-all duration-500 cursor-pointer;
 
         h3 {
-          @apply text-2xl text-white font-bold;
+          @apply text-2xl text-white font-[800];
         }
 
         a {
-          @apply text-sm font-light;
+          @apply text-sm font-light opacity-0 transition-all duration-500 z-30;
+        }
+      }
+
+      &:hover {
+        .text {
+          @apply bg-gradient-to-tr from-[#181E4B] from-5% to-transparent;
+
+          h3 {
+            @apply text-2xl text-white font-bold;
+          }
+
+          a {
+            @apply opacity-100;
+          }
         }
       }
     }

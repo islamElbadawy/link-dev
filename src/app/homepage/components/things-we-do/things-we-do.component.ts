@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-things-we-do',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './things-we-do.component.html',
-  styleUrl: './things-we-do.component.scss'
+  styleUrl: './things-we-do.component.scss',
 })
-export class ThingsWeDoComponent {
-
-}
+export class ThingsWeDoComponent {}

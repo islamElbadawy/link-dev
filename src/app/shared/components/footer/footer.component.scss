@@ -35,12 +35,20 @@ footer {
 
         .apps {
           h5 {
-            @apply text-[#5E6282] text-lg;
+            @apply text-[#5E6282] text-lg mb-4;
           }
 
           div {
             a {
-              @apply rounded-lg;
+              @apply flex items-center justify-center gap-2 bg-black text-white px-6 py-3 rounded-full;
+
+              img {
+                @apply w-6 h-6;
+              }
+
+              p {
+                @apply text-white text-xs font-[200];
+              }
             }
           }
         }
