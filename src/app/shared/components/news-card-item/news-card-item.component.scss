@@ -1,5 +1,5 @@
 .card {
-  @apply relative w-full max-w-[360px] flex flex-col gap-4 rounded-xl bg-white drop-shadow-xl  pb-4 z-0;
+  @apply relative w-full max-w-[360px] flex flex-col gap-4 rounded-xl bg-white drop-shadow-xl shadow-lg  pb-4 z-0;
 
   img {
     @apply w-full object-cover aspect-[1/1] rounded-t-xl;

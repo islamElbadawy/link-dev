@@ -1,5 +1,5 @@
 .banner {
-  @apply w-full relative;
+  @apply w-full relative  overflow-hidden;
 
   .carousel-dots {
     @apply container flex gap-24 absolute bottom-[2rem] left-[2rem] items-center;

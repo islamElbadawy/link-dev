@@ -27,8 +27,9 @@ export class BannerComponent {
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: false,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
+    arrows: false,
   };
 
   constructor(private apiService: ApiService) {}
