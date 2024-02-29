@@ -1,0 +1,24 @@
+section {
+  @apply relative py-16 px-0 flex justify-end bg-[#efefef];
+
+  .stroke-text {
+    @apply text-[#05000010] text-[7rem] font-bold max-w-[500px] absolute top-8 left-[-2rem] leading-[.8] capitalize z-[0];
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #05000010;
+  }
+
+  .about {
+    @apply py-14 px-16 flex flex-col items-end gap-14 text-end max-w-[1050px] bg-[#F215B6] z-10;
+
+    h2 {
+      @apply text-[48px] font-bold text-[#253776] text-end  max-w-[500px];
+    }
+
+    p {
+      @apply max-w-[560px] text-xl text-white font-light;
+      letter-spacing: 1px;
+      line-height: 1.6;
+    }
+  }
+}
