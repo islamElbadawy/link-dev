@@ -1,5 +1,5 @@
 section {
-  @apply relative  pb-16 pt-40 px-0 flex flex-col gap-8 xl:gap-0 justify-center xl:flex-row xl:justify-end bg-[#efefef];
+  @apply relative  pb-16 pt-40 px-0 flex flex-col gap-8 xl:gap-0 justify-center xl:flex-row xl:justify-end xl:items-start bg-[#efefef];
 
   .stroke-text {
     @apply text-[#05000010] text-[7rem] font-bold max-w-[500px] absolute top-8 left-[-2rem] leading-[.8] capitalize z-[0];
@@ -51,7 +51,8 @@ section {
   }
 
   .about {
-    @apply py-14 px-16 xl:ps-64 flex flex-col flex-1 xl:items-end gap-14 xl:text-end bg-[#F215B6] z-10;
+    @apply py-14 px-16 xl:ps-64 flex flex-col xl:items-end gap-14 xl:text-end bg-[#F215B6] z-10;
+    flex: 1 auto;
 
     h2 {
       @apply text-[48px] font-bold text-[#253776] xl:text-end  xl:max-w-[560px];
