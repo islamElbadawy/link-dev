@@ -3,9 +3,10 @@ footer {
 
   .container {
     &:first-of-type {
-      @apply flex flex-wrap justify-between;
+      @apply flex flex-col md:flex-row md:flex-wrap gap-8 justify-between;
 
       div {
+        @apply min-w-24;
         .logo {
           @apply w-[157px] mb-2;
         }
