@@ -1,6 +1,6 @@
 # LinkDev
 
-Homepage and News for the internet users to be able to view and list of News
+Homepage and News for the internet users to be able to view and list News
 with filtering by category.
 
 ## Table of Contents
@@ -60,7 +60,6 @@ project-root/\n
 
 ## Notes
 
-- I have created two models to describe the structure of data for things-we-do section inside models folder.
 - Banner bruch line behind the main title of banner I used one as svg and it made the page load slowly so I removed it but is it's availabe I can replace it.
 - I made some components to be used in other modules keeping in mind project scalability such as News-card-item, and news-categories components.
 - The performance is heavily affected by slick carouseljs but I don't know what is the best option for now
