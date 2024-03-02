@@ -12,35 +12,35 @@ with filtering by category.
 
 ## Project Structure
 
-project-root/\n
+project-root/<br>
 │
-├── src/\n
-│ ├── app/\n
-│ │ ├── homepage/\n
-│ │ │ ├── components/\n
-│ │ │ │ |── banner/
-│ │ │ │ |── banner-item/\n
-│ │ │ │ |── home/\n
-│ │ │ │ |── latest-news/\n
-│ │ │ │ |── things-we-do/\n
-│ │ ├── shared/\n
-│ │ │ ├── components/\n
-│ │ │ │ |── footer/\n
-│ │ │ │ |── navbar/\n
-│ │ │ │ |── news-categories/\n
-│ │ │ │ |── news-card-item/\n
-│ │ │ ├── models/\n
-│ │ │ │ |── about-dto.ts/\n
-│ │ │ │ |── banner-item.ts/\n
-│ │ │ │ |── category-item.ts/\n
-│ │ │ │ |── news-item.ts/\n
-│ │ │ │ |── service-item.ts/\n
-│ │ │ ├── pipes/\n
-│ │ │ │ |── filter.pipe.ts/\n
-│ │ │ │ |── parse-category.pipe.ts/\n
-│ │ │ ├── services/
-│ │ │ │ |── api.service.ts/\n
-│ ├── assets/
+├── src/ <br>
+│ ├── app/<br>
+│ │ ├── homepage/<br>
+│ │ │ ├── components/<br>
+│ │ │ │ |── banner/<br>
+│ │ │ │ |── banner-item/<br>
+│ │ │ │ |── home/<br>
+│ │ │ │ |── latest-news/<br>
+│ │ │ │ |── things-we-do/<br>
+│ │ ├── shared/<br>
+│ │ │ ├── components/<br>
+│ │ │ │ |── footer/<br>
+│ │ │ │ |── navbar/<br>
+│ │ │ │ |── news-categories/<br>
+│ │ │ │ |── news-card-item/<br>
+│ │ │ ├── models/<br>
+│ │ │ │ |── about-dto.ts/<br>
+│ │ │ │ |── banner-item.ts/<br>
+│ │ │ │ |── category-item.ts/<br>
+│ │ │ │ |── news-item.ts/<br>
+│ │ │ │ |── service-item.ts/<br>
+│ │ │ ├── pipes/<br>
+│ │ │ │ |── filter.pipe.ts/<br>
+│ │ │ │ |── parse-category.pipe.ts/<br>
+│ │ │ ├── services/<br>
+│ │ │ │ |── api.service.ts/<br>
+│ ├── assets/<br>
 
 ## Dependencies
 
