@@ -12,34 +12,34 @@ with filtering by category.
 
 ## Project Structure
 
-project-root/
+project-root/\n
 │
-├── src/
-│ ├── app/
-│ │ ├── homepage/
-│ │ │ ├── components/
+├── src/\n
+│ ├── app/\n
+│ │ ├── homepage/\n
+│ │ │ ├── components/\n
 │ │ │ │ |── banner/
-│ │ │ │ |── banner-item/
-│ │ │ │ |── home/
-│ │ │ │ |── latest-news/
-│ │ │ │ |── things-we-do/
-│ │ ├── shared/
-│ │ │ ├── components/
-│ │ │ │ |── footer/
-│ │ │ │ |── navbar/
-│ │ │ │ |── news-categories/
-│ │ │ │ |── news-card-item/
-│ │ │ ├── models/
-│ │ │ │ |── about-dto.ts/
-│ │ │ │ |── banner-item.ts/
-│ │ │ │ |── category-item.ts/
-│ │ │ │ |── news-item.ts/
-│ │ │ │ |── service-item.ts/
-│ │ │ ├── pipes/
-│ │ │ │ |── filter.pipe.ts/
-│ │ │ │ |── parse-category.pipe.ts/
+│ │ │ │ |── banner-item/\n
+│ │ │ │ |── home/\n
+│ │ │ │ |── latest-news/\n
+│ │ │ │ |── things-we-do/\n
+│ │ ├── shared/\n
+│ │ │ ├── components/\n
+│ │ │ │ |── footer/\n
+│ │ │ │ |── navbar/\n
+│ │ │ │ |── news-categories/\n
+│ │ │ │ |── news-card-item/\n
+│ │ │ ├── models/\n
+│ │ │ │ |── about-dto.ts/\n
+│ │ │ │ |── banner-item.ts/\n
+│ │ │ │ |── category-item.ts/\n
+│ │ │ │ |── news-item.ts/\n
+│ │ │ │ |── service-item.ts/\n
+│ │ │ ├── pipes/\n
+│ │ │ │ |── filter.pipe.ts/\n
+│ │ │ │ |── parse-category.pipe.ts/\n
 │ │ │ ├── services/
-│ │ │ │ |── api.service.ts/
+│ │ │ │ |── api.service.ts/\n
 │ ├── assets/
 
 ## Dependencies
@@ -60,6 +60,7 @@ project-root/
 
 ## Notes
 
+- I have created two models to describe the structure of data for things-we-do section inside models folder.
 - Banner bruch line behind the main title of banner I used one as svg and it made the page load slowly so I removed it but is it's availabe I can replace it.
 - I made some components to be used in other modules keeping in mind project scalability such as News-card-item, and news-categories components.
 - The performance is heavily affected by slick carouseljs but I don't know what is the best option for now
