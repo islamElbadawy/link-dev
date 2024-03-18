@@ -18,28 +18,28 @@ project-root/<br>
 │ ├── app/<br>
 │ │ ├── homepage/<br>
 │ │ │ ├── components/<br>
-│ │ │ │ |── banner/<br>
-│ │ │ │ |── banner-item/<br>
-│ │ │ │ |── home/<br>
-│ │ │ │ |── latest-news/<br>
-│ │ │ │ |── things-we-do/<br>
+│ │ │ │ |── banner<br>
+│ │ │ │ |── banner-item<br>
+│ │ │ │ |── home<br>
+│ │ │ │ |── latest-news<br>
+│ │ │ │ |── things-we-do<br>
 │ │ ├── shared/<br>
 │ │ │ ├── components/<br>
-│ │ │ │ |── footer/<br>
-│ │ │ │ |── navbar/<br>
-│ │ │ │ |── news-categories/<br>
-│ │ │ │ |── news-card-item/<br>
+│ │ │ │ |── footer<br>
+│ │ │ │ |── navbar<br>
+│ │ │ │ |── news-categories<br>
+│ │ │ │ |── news-card-item<br>
 │ │ │ ├── models/<br>
-│ │ │ │ |── about-dto.ts/<br>
-│ │ │ │ |── banner-item.ts/<br>
-│ │ │ │ |── category-item.ts/<br>
-│ │ │ │ |── news-item.ts/<br>
-│ │ │ │ |── service-item.ts/<br>
+│ │ │ │ |── about-dto.ts<br>
+│ │ │ │ |── banner-item.ts<br>
+│ │ │ │ |── category-item.ts<br>
+│ │ │ │ |── news-item.ts</br>
+│ │ │ │ |── service-item.ts<br>
 │ │ │ ├── pipes/<br>
-│ │ │ │ |── filter.pipe.ts/<br>
-│ │ │ │ |── parse-category.pipe.ts/<br>
+│ │ │ │ |── filter.pipe.ts<br>
+│ │ │ │ |── parse-category.pipe.ts<br>
 │ │ │ ├── services/<br>
-│ │ │ │ |── api.service.ts/<br>
+│ │ │ │ |── api.service.ts<br>
 │ ├── assets/<br>
 
 ## Dependencies
